@@ -11,7 +11,7 @@ import { use } from 'react';
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
-export default async function RevenueChart({
+export default function RevenueChart({
   revenue,
 }: {
   revenue: Revenue[];
