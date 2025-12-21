@@ -90,10 +90,14 @@ export default async function InvoicesTable({
                         className="rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`}
+                        alt={`${invoice.name}'s profile picture`} // Delete this line
                       />
                       <p>{invoice.name}</p>
                     </div>
+                  </td>
+                  <td className="flex justify-end gap-2 whitespace-nowrap px-6 py-4 text-sm">
+                    <UpdateInvoice id={invoice.id} />
+                    <DeleteInvoice id={invoice.id} />
                   </td>
                   <td className="whitespace-nowrap px-3 py-3">
                     {invoice.email}
